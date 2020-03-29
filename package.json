@@ -6,12 +6,14 @@
   "author": "antnf3 <antnf3@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "parcel index.html --target browser --port 3000 --open",
+    "start": "parcel index.html --target browser --port 3000 --open",
     "build": "parcel build index.html -d build --public-url ./"
   },
   "dependencies": {
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "react-redux": "^7.2.0",
+    "react-router-dom": "^5.1.2"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",

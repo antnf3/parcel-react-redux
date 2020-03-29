@@ -58,7 +58,21 @@ react-redux with parcel
 
 ```json
 "scripts": {
-    "dev": "parcel index.html --target browser --port 3000 --open",
+    "start": "parcel index.html --target browser --port 3000 --open",
     "build": "parcel build index.html -d build --public-url ./"
   }
+```
+
+## 추가 패키지모듈 설치
+
+```shell
+> yarn add react-router-dom react-redux
+```
+
+## 추가 파일 및 폴더 생성
+
+```shell
+> mkdir src/components
+> touch src/components/Home.js
+> touch src/components/Detail.js
 ```
