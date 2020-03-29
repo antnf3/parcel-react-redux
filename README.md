@@ -68,7 +68,7 @@ react-redux with parcel
 ## 추가 패키지모듈 설치
 
 ```shell
-> yarn add react-router-dom react-redux
+> yarn add react-router-dom redux react-redux
 ```
 
 ## 추가 파일 및 폴더 생성
