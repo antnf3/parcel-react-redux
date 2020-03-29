@@ -1,0 +1,8 @@
+{
+  "name": "parcel-react-redux",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:antnf3/parcel-react-redux.git",
+  "author": "antnf3 <antnf3@gmail.com>",
+  "license": "MIT"
+}
