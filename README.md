@@ -58,7 +58,7 @@ react-redux with parcel
 
 ```json
 "scripts": {
-    "dev": "parcel index.html --target browser --port 3000 --open"
-
+    "dev": "parcel index.html --target browser --port 3000 --open",
+    "build": "parcel build index.html -d build --public-url ./"
   }
 ```

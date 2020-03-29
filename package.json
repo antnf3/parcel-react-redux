@@ -6,7 +6,8 @@
   "author": "antnf3 <antnf3@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "parcel index.html --target browser --port 3000 --open"
+    "dev": "parcel index.html --target browser --port 3000 --open",
+    "build": "parcel build index.html -d build --public-url ./"
   },
   "dependencies": {
     "react": "^16.13.1",
