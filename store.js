@@ -27,4 +27,9 @@ const redux = (state = [], action) => {
 };
 const store = createStore(redux);
 
+export const actionCreators = {
+  addToDo,
+  deleteToDo
+};
+
 export default store;
