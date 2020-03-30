@@ -1,15 +1,20 @@
 import React, { Fragment, useState } from "react";
+import { connect } from "react-redux";
 
-function Home() {
+function Home({ toDos }) {
+  console.log(toDos);
   const [text, setText] = useState("");
   function onChange(e) {
-    // e.preventDefault();
     setText(e.target.value);
+  }
+  function onSubmit(e) {
+    e.preventDefault();
+    setText("");
   }
   return (
     <Fragment>
       <h1>ToDo LIST</h1>
-      <form>
+      <form onSubmit={onSubmit}>
         <input type="text" value={text} onChange={onChange} />
         <button>ADD</button>
       </form>
@@ -18,4 +23,8 @@ function Home() {
   );
 }
 
-export default Home;
+function mapStateToProps(state, ownProps) {
+  return { toDos: state };
+}
+
+export default connect(mapStateToProps)(Home);
